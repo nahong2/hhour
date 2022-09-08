@@ -329,6 +329,15 @@ h6 {
   font-family: var(--font-secondary);
 }
 
+.header .logo span {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+  font-family: var(--font-secondary);
+}
+
 .header .logo i {
   font-size: 32px;
   margin-right: 8px;
