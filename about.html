@@ -4,11 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta property="og:title" content="HHSOFT Corporation">
-  <meta property="og:description" content="HHSOFT Corporation">
+  <meta property="og:title" content="HHOUR Team">
+  <meta property="og:description" content="HHOUR Team">
   <meta property="og:url" content="https://hhourcorp.com/">
 
-  <title>HHSOFT Corporation</title>
+  <title>HHHOUR Team</title>
 
   <link href="hhour_favicon.png" rel="icon">
 
@@ -33,7 +33,7 @@
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="#" class="active">About</a></li>
-          <li><a href="#">Services</a></li>
+          <li><a href="javascript:void(0);" onclick="openPopup('#myPopup')">Services</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -114,6 +114,16 @@
     </section>
   </main>
 
+
+  <div class="popup" id="myPopup" aria-hidden="true" onClick="if(event.target == this){closePopup('#myPopup');}">
+    <div class="wrapper" aria-labelledby="popupTitle" aria-describedby="popupText" aria-modal="true">
+      <h2 id="popupTitle">SORRY!</h2>
+      <p id="popupText">This page will be updated soon!</p>
+      <button id="closePopup" onClick="closePopup('#myPopup');" aria-label="Close popup">Close</button>
+    </div>
+  </div>
+
+
   <footer id="footer" class="footer">
     <div class="container">
       <div class="copyright">
@@ -138,6 +148,8 @@
   <script src="vendor/aos/aos.js"></script>
   <script src="vendor/php-email-form/validate.js"></script>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
   <script src="js/side.js"></script>
 </body>
 

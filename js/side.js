@@ -176,3 +176,13 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+function openPopup(popup) {
+  $(popup).show().attr("aria-hidden", "false");
+  $("#closePopup").focus();
+}
+
+function closePopup(popup) {
+  $(popup).hide().attr("aria-hidden", "true");
+  $("#openMyPopup").focus();
+}

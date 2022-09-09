@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="HHSOFT Corporation">
-    <meta property="og:description" content="HHSOFT Corporation">
+    <meta property="og:title" content="HHOUR Team">
+    <meta property="og:description" content="HHOUR Team">
     <meta property="og:url" content="https://hhourcorp.com/">
 
-    <title>HHSOFT Corporation</title>
+    <title>HHOUR Team</title>
     <link rel="stylesheet" href="./css/main.css">
     <link href="hhour_favicon.png" rel="icon">
 </head>
@@ -27,7 +27,7 @@
             <p>The HHOUR team wants to change the world and has a heart-fluttering goal.
                 The reason for the existence of the HHOUR team is to create an easy and convenient world for everyone.
             </p>
-            <a href="#">Explore</a>
+            <a href="about.html">Explore</a>
         </div>
 
         <ul class="social">
@@ -48,18 +48,29 @@
         </footer>
     </section>
 
+    <div class="popup" id="myPopup" aria-hidden="true" onClick="if(event.target == this){closePopup('#myPopup');}">
+        <div class="wrapper" aria-labelledby="popupTitle" aria-describedby="popupText" aria-modal="true">
+            <h2 id="popupTitle">SORRY!</h2>
+            <p id="popupText">This page will be updated soon!</p>
+            <button id="closePopup" onClick="closePopup('#myPopup');" aria-label="Close popup">Close</button>
+        </div>
+    </div>
+
     <div class="menu">
         <ul>
             <li><strong><a href="/">Home</a></strong></li>
             <li><strong><a href="about.html">About</a></strong></li>
-            <li><strong><a href="#">Services</a></strong></li>
+            <li><strong><a href="javascript:void(0);" onclick="openPopup('#myPopup')">Services</a></strong></li>
             <li><strong><a href="contact.html">Contact</a></strong></li>
         </ul>
     </div>
+
     <div id="preloader">
         <div class="line"></div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
 </body>
-<script src="./js/main.js"></script>
 
 </html>
