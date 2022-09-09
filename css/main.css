@@ -20,7 +20,7 @@ header {
 }
 
 header .logo {
-    color: #fff;
+    color: transparent;
     text-transform: uppercase;
     cursor: pointer;
 }
